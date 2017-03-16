@@ -24,6 +24,16 @@
  * @subpackage Accelerate Marketing
  * @since Accelerate Marketing 1.0
  */
+ add_filter( 'body_class','accelerate_body_classes' );
+ function accelerate_body_classes( $classes ) {
+
+   if (is_page('contact') ) {
+     $classes[] = 'contact';
+   }
+     return $classes;
+
+ }
+
  function create_custom_post_types() {
     register_post_type( 'case_studies',
         array(
@@ -34,7 +44,7 @@
             'public' => true,
             'has_archive' => true,
             'rewrite' => array( 'slug' => 'case-studies' ),
-        )
-    );
+        ));
+
 }
 add_action( 'init', 'create_custom_post_types' );

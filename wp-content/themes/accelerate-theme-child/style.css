@@ -12,6 +12,12 @@
 
 @import url("../accelerate-theme/style.css");
 
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
@@ -22,8 +28,12 @@
     background: none repeat scroll 0 0 #45ac9d;
 }
 #masthead nav ul li {
-
-  margin:0 60px;
+  margin:0 0 4px 20px;
+  overflow:hidden;
+  float: left;
+}
+ul, ol {
+  margin: 0 0 4px;20px;
 }
 
 /* homepage case studies*/
@@ -86,7 +96,9 @@ ul.homepage-featured-work {
 /*Case Studies*/
 
 article.case-study{
+  width: 100%;
   margin: 40px 0 0;
+  overflow: auto;
 }
 
 aside.case-study-sidebar{
@@ -108,3 +120,33 @@ div.case-study-images img {
 .clearfix {
   overflow: auto;
 }
+
+/*contact page*/
+.page #content {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+span.nf-form-title{
+  visibility: hidden;
+  display: none;
+}
+
+.nf-field-element{
+
+}
+
+ #nf-form-1-cont {
+display:inline;
+ }
+
+ .ninja-forms-field {
+  padding: 7px;
+  }
+
+  #nf-field-4{
+color: white;
+font-weight: normal;;
+background-color: #45ac9d;
+float:right;
+  }

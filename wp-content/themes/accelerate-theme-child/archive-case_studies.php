@@ -13,7 +13,7 @@
  */
 
 get_header(); ?>
-<div class="clearfix">
+
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
       <?php while ( have_posts() ) : the_post();
@@ -21,7 +21,7 @@ get_header(); ?>
 				$size = "full";
         $services = get_field('services');?>
 
-		<div class="clearfix">
+		<!-- <div class="clearfix"> -->
 				<article class="case-study">
   				<aside class="case-study-sidebar">
   				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
@@ -30,7 +30,6 @@ get_header(); ?>
   					<p><strong><a href="<?php the_permalink(); ?>">View Project</a></strong></p>
   				</aside>
 
-<div class="clearfix">
 						<div class="case-study-images">
               <a href="<?php the_permalink(); ?>">
   					<?php if($image_1) {
@@ -39,7 +38,6 @@ get_header(); ?>
                </a>
   					</div>
       </article>
-		</div>
 
 			<?php endwhile; // end of the loop. ?>
 
