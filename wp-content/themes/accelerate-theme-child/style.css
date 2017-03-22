@@ -148,5 +148,16 @@ display:inline;
 color: white;
 font-weight: normal;;
 background-color: #45ac9d;
-float:right;
+border: none;
+padding: 10px 8% 10px 8%;
+float: right;
+  }
+
+  /** About **/
+  #about.main {
+    margin:auto;
+  }
+  h2{
+    color: white;
+    line-height: inherit;
   }
