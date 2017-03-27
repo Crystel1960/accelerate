@@ -154,10 +154,35 @@ float: right;
   }
 
   /** About **/
-  #about.main {
-    margin:auto;
-  }
-  h2{
+  .about h2{
     color: white;
-    line-height: inherit;
+    font-size: 50px;
+    line-height: 1.2;
+  }
+   h2 span {
+    color:#45ac9d;
+  }
+
+  .top{
+ margin-left: 300px;
+ margin-right: 300px;
+ }
+
+  .text-one{
+margin-left: 400px;
+margin-right: 100px;
+  }
+  .text-two{
+    margin-left: 100px;
+    margin-right: 400px;
+  }
+
+  .text-three{
+    margin-left: 400px;
+    margin-right: 100px;
+  }
+
+  .text-four{
+    margin-left: 100px;
+    margin-right: 400px;
   }
