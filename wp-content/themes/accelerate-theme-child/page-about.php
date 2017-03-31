@@ -28,70 +28,78 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post();
 				$our_services = get_field('our_services');
 				$services_content = get_field('services_content');
-				$icon_1 = get_link('icon_1');
+				$icon_1 = get_field('icon_1');
 				$title_field_1 = get_field('title_field_1');
 				$description_1 = get_field('description_1');
-				$icon_2 = get_link('icon_2');
+				$icon_2 = get_field('icon_2');
 				$title_field_2 = get_field('title_field_2');
 				$description_2 = get_field('description_2');
-				$icon_3 = get_link('icon_3');
+				$icon_3 = get_field('icon_3');
 				$title_field_3 = get_field('title_field_3');
 				$description_3 = get_field('description_3');
-				$icon_4 = get_link('icon_4');
+				$icon_4 = get_field('icon_4');
 				$title_field_4 = get_field('title_field_4');
 				$description_4 = get_field('description_4');
+				$size="full";
 				?>
 
+				<div class="services">
 				<div class="top">
 					<h4><?php echo $our_services; ?></h4>
 					<p><?php echo $services_content; ?></p>
 				</div>
 
-				<div class="text-one">
+<!-- content strategy -->
+				<div class="fields-one">
 					<h4><?php echo $title_field_1; ?></h4>
 					<p><?php echo $description_1; ?></p>
-					<?php if($image_1) { ?>
-					</div>
+						<?php if($icon_1) { ?>
 
-					<div class="i-one">
-						<?php echo wp_get_attachment_image ($icon_1, $size); ?>
+						<div class="i-one">
+							<?php echo wp_get_attachment_image ($icon_1, $size); ?>
 						<?php } ?>
 					</div>
+					</div>
 
-						<div class="text-two">
-							<h4><?php echo $title_field_2; ?></h4>
-							<p><?php echo $description_2; ?></p>
-							<?php if($image_1) { ?>
-							</div>
-							<div class="i-two">
-								<?php echo wp_get_attachment_image ($icon_1, $size); ?>
+<!-- Influencer mapping -->
+<div class="fields-two">
+					 <h4><?php echo $title_field_2; ?></h4>
+					 <p><?php echo $description_2; ?></p>
+							<?php if($icon_2) { ?>
+
+			<div class="i-two">
+		<?php echo wp_get_attachment_image ($icon_2, $size); ?>
 								<?php } ?>
+								</div>
 							</div>
 
-								<div class="text-three">
-									<h4><?php echo $title_field_3; ?></h4>
-									<p><?php echo $description_3; ?></p>
-									<?php if($image_1) { ?>
-									</div>
-									<div class="i-three">
-										<?php echo wp_get_attachment_image ($icon_3, $size); ?>
-										<?php } ?>
-									</div>
+<!-- social media strategy -->
+<div class="fields-three">
+				 <h4><?php echo $title_field_3; ?></h4>
+				<p><?php echo $description_3; ?></p>
+						<?php if($icon_1) { ?>
 
-										<div class="text-four">
-											<h4><?php echo $title_field_4; ?></h4>
-											<p><?php echo $description_4; ?></p>
-											<?php if($image_1) { ?>
-											</div>
-											<div class="i-four">
-												<?php echo wp_get_attachment_image ($icon_4, $size); ?>
-												<?php } ?>
-												<div>
+							<div class="i-three">
+						<?php echo wp_get_attachment_image ($icon_3, $size); ?>
+						<?php } ?>
+					</div>
+					</div>
+
+<!-- design and development -->
+<div class="fields-four">
+					<h4><?php echo $title_field_4; ?></h4>
+					<p><?php echo $description_4; ?></p>
+						<?php if($icon_1) { ?>
+
+						<div class="i-four">
+						<?php echo wp_get_attachment_image ($icon_4, $size); ?>
+							<?php } ?>
+						</div>
+						</div>
 
 
 			<?php endwhile; // end of the loop. ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
-</section>
 
 <?php get_footer(); ?>

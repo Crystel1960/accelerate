@@ -156,7 +156,8 @@ float: right;
   /** About **/
   .about h2{
     color: white;
-    font-size: 50px;
+    font-size: 40px;
+    font-weight: normal;
     line-height: 1.2;
   }
    h2 span {
@@ -164,25 +165,54 @@ float: right;
   }
 
   .top{
- margin-left: 300px;
- margin-right: 300px;
+ margin-left: 350px;
+ margin-right: 350px;
+ text-align: center;
  }
 
-  .text-one{
-margin-left: 400px;
-margin-right: 100px;
-  }
-  .text-two{
-    margin-left: 100px;
-    margin-right: 400px;
-  }
 
-  .text-three{
-    margin-left: 400px;
-    margin-right: 100px;
-  }
+ .fields-one{
+margin-left: 300px;
+margin-right: 300px;
 
-  .text-four{
-    margin-left: 100px;
-    margin-right: 400px;
-  }
+ }
+
+ .i-one {
+   display: inline-block;
+   float: left;
+   width: auto;
+ }
+
+ .fields-two {
+   margin-left: 300px;
+   margin-right: 300px;
+ }
+
+ .i-two {
+float: right;
+   width: auto;
+   margin-right: 60px;
+ }
+
+ .fields-three{
+   float: left;
+   margin-left: 300px;
+   margin-right: 300px;
+ }
+
+ .i-three {
+   float: left;
+   width: auto;
+   margin-right: 60px;
+}
+
+ .fields-four {
+   float: left;
+   margin-left: 300px;
+   margin-right: 300px;
+ }
+
+ .i-four {
+   float: right;
+   width: auto;
+   margin-right: 60px;
