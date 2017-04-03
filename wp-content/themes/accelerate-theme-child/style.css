@@ -171,48 +171,41 @@ float: right;
  }
 
 
- .fields-one{
-margin-left: 300px;
-margin-right: 300px;
+.title-content{
+  width: 70%;
+  float: left;
+}
 
- }
+.icons{
+  width: 25%;
+  float: left;
+}
+ .c-one {
+width: 70%;
+float: left;
+}
 
  .i-one {
-   display: inline-block;
    float: left;
-   width: auto;
  }
 
- .fields-two {
-   margin-left: 300px;
-   margin-right: 300px;
- }
+ .c-two {
+float: right;
+}
 
  .i-two {
 float: right;
-   width: auto;
-   margin-right: 60px;
  }
 
- .fields-three{
-   float: left;
-   margin-left: 300px;
-   margin-right: 300px;
+ .c-three {
+ float: left;
  }
-
  .i-three {
    float: left;
-   width: auto;
-   margin-right: 60px;
 }
 
- .fields-four {
-   float: left;
-   margin-left: 300px;
-   margin-right: 300px;
- }
-
+.c-four {
+float: right;
+}
  .i-four {
    float: right;
-   width: auto;
-   margin-right: 60px;
