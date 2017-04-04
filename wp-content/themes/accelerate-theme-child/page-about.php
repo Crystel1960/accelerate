@@ -42,67 +42,62 @@ get_header(); ?>
 				$icon_4 = get_field('icon_4');
 				$title_field_4 = get_field('title_field_4');
 				$description_4 = get_field('description_4');
+				$botom_question = get_field('bottom_question');
 				$size="full";
 				?>
 
-
-				<div class="services">
+<!--services intro copy--->
 				<div class="top">
 					<h4><?php echo $our_services; ?></h4>
 					<p><?php echo $services_content; ?></p>
 				</div>
 
+
 <!-- services title and content -->
-<div class="title-content">
-<div class="c-one">
+<section class="about-section">
+	<figure class="service-image align-left">
+		<?php echo wp_get_attachment_image ($icon_1, $size); ?>
+	</figure>
+
+<div class="service-description">
 					<h4><?php echo $title_field_1; ?></h4>
 					<p><?php echo $description_1; ?></p>
-						<?php if($icon_1) { ?>
-						</div>
-
-<div class="c-two">
-					<h4><?php echo $title_field_2; ?></h4>
-	 				<p><?php echo $description_2; ?></p>
-	 					<?php if($icon_2) { ?>
-					</div>
-
-<div class="c-three">
-					<h4><?php echo $title_field_3; ?></h4>
-				 	<p><?php echo $description_3; ?></p>
-				 			<?php if($icon_3) { ?>
-					</div>
-
-<div class="c-four">
-					<h4><?php echo $title_field_4; ?></h4>
-					<p><?php echo $description_4; ?></p>
-							<?php if($icon_4) { ?>
-					</div>
-				</div>
-
-
-<!-- servcies icons -->
-			<div class="icons">
-					<div class="i-one">
-					<?php echo wp_get_attachment_image ($icon_1, $size); ?>
-						<?php } ?>
-					</div>
-
-
-					<div class="i-two">
-					<?php echo wp_get_attachment_image ($icon_2, $size); ?>
-					 <?php } ?>
-					</div>
-
-				 	<div class="i-three">
-					<?php echo wp_get_attachment_image ($icon_3, $size); ?>
-						<?php } ?>
-					</div>
-
-					<div class="i-four">
-						<?php echo wp_get_attachment_image ($icon_4, $size); ?>
-							<?php } ?>
-						</div>
 			</div>
+	</section>
+
+<section class="about-section">
+		<figure class="service-image align-right">
+				<?php echo wp_get_attachment_image ($icon_2, $size); ?>
+						</figure>
+
+	<div class="service-description">
+				<h4><?php echo $title_field_2; ?></h4>
+				<p><?php echo $description_2; ?></p>
+			</div>
+	</section>
+
+<section class="about-section">
+	<figure class="service-image align-left">
+	<?php echo wp_get_attachment_image ($icon_3, $size); ?>
+		</figure>
+
+	<div class="service-description">
+		<h4><?php echo $title_field_3; ?></h4>
+		<p><?php echo $description_3; ?></p>
+</div>
+</section>
+
+<section class="about-section">
+<figure class="service-image align-right">
+<?php echo wp_get_attachment_image ($icon_4, $size); ?>
+	</figure>
+
+<div class="service-description">
+	<h4><?php echo $title_field_4; ?></h4>
+	<p><?php echo $description_4; ?></p>
+</div>
+</section>
+
 
 
 			<?php endwhile; // end of the loop. ?>

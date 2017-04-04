@@ -153,7 +153,7 @@ padding: 10px 8% 10px 8%;
 float: right;
   }
 
-  /** About **/
+  /** About page headline**/
   .about h2{
     color: white;
     font-size: 40px;
@@ -164,48 +164,23 @@ float: right;
     color:#45ac9d;
   }
 
+/**services intro copy**/
+
   .top{
- margin-left: 350px;
- margin-right: 350px;
  text-align: center;
  }
 
-
-.title-content{
-  width: 70%;
-  float: left;
-}
-
-.icons{
+ .service-image{
+   float: left;
   width: 25%;
+}
+
+.about-section{
   float: left;
-}
- .c-one {
-width: 70%;
-float: left;
+  width: 70%;
+  margin-left: 30px;;
 }
 
- .i-one {
+ .service-description{
    float: left;
  }
-
- .c-two {
-float: right;
-}
-
- .i-two {
-float: right;
- }
-
- .c-three {
- float: left;
- }
- .i-three {
-   float: left;
-}
-
-.c-four {
-float: right;
-}
- .i-four {
-   float: right;
