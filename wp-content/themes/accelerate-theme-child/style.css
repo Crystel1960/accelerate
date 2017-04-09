@@ -166,21 +166,40 @@ float: right;
 
 /**services intro copy**/
 
-  .top{
+.top{
  text-align: center;
  }
 
- .service-image{
+ .service-image {
    float: left;
   width: 25%;
+  margin-right: 5%;
+}
+
+.service-image.align-right {
+  float: right;
+  margin-right: 0;
+  margin-left: 5%;
 }
 
 .about-section{
-  float: left;
-  width: 70%;
-  margin-left: 30px;;
+  overflow: auto;
+  margin-bottom: 2.5em;
 }
 
  .service-description{
    float: left;
+   width: 70%;
  }
+
+.contact-us{
+  float:left;
+  width: 25%;
+  margin-bottom: 2.5em;
+}
+ .button {
+   width: 30%;
+   margin-right: 0;
+   margin-left: 5%;
+ }
+}
