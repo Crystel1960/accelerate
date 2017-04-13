@@ -192,14 +192,52 @@ float: right;
    width: 70%;
  }
 
-.contact-us{
-  float:left;
-  width: 25%;
-  margin-bottom: 2.5em;
-}
- .button {
-   width: 30%;
-   margin-right: 0;
-   margin-left: 5%;
+ .about-contact {
+   text-align: center;
+   padding-top: 40px;
+   border-top: 1px solid #CFCFCF;
  }
+ .contact-us{
+   display: inline-block;
+   margin-bottom: 1.5em;
+ }
+ .about-contact .button {
+    width: 15%;
+    margin-left: 1.5em;
+    display: inline-block;
+ }
+
+ /** Fun 404 page**/
+
+ .oops-wrapper{
+   overflow: auto;
+width: 100%;
+ }
+.taxi.align-left{
+  width: 100%;
+  float: left;
+  padding-right: 20%;
+}
+
+.oops-content.align-right {
+  float: right;
+  width: 55%;
+  padding-left: 20%;
+}
+ .oops-content h2 {
+font-size: 30px;
+color: #45ac9d;
+
+ }
+ .oops-content p{
+font-size: 20px;
+}
+
+p span {
+  color: #45ac9d;
+}
+
+.search-form{
+  float:left;
+  width: auto;
 }

@@ -100,12 +100,12 @@ get_header(); ?>
 	</div>
 
 </section>
-
+<section class="about-contact">
 <div class="contact-us">
 	<h4><?php echo $bottom_question; ?></h4>
 </div>
 	<a class="button" href="<?php echo $contact_us; ?>/contact-us">Contact Us</a>
-
+</section>
 
 
 			<?php endwhile; // end of the loop. ?>
