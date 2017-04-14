@@ -70,8 +70,10 @@ ul.homepage-featured-work {
 }
 
 /* homepage blog post */
+
 .blog-post {
-	width: 50%;
+  overflow: auto;
+  width:100;
 }
 .blog-post h4 {
 	font-size: 16px;
@@ -90,6 +92,14 @@ ul.homepage-featured-work {
 	font-weight: bold;
 	color: #45ac9d;
 	text-transform: uppercase;
+}
+
+/** Twitter sidebar**/
+
+.twitter-feed{
+  float: left;
+  width: 30%;
+  margin: 5%;
 }
 
 
@@ -211,18 +221,20 @@ float: right;
 
  .oops-wrapper{
    overflow: auto;
-width: 100%;
+   width: 100%;
+   margin-top: 3em;
+   box-sizing: border-box;
  }
 .taxi.align-left{
-  width: 100%;
+  width: 45%;
   float: left;
-  padding-right: 20%;
+  padding-right: 5%;
 }
 
 .oops-content.align-right {
-  float: right;
-  width: 55%;
-  padding-left: 20%;
+  float: left;
+  width: 45%;
+  padding-left: 5%;
 }
  .oops-content h2 {
 font-size: 30px;
@@ -235,9 +247,4 @@ font-size: 20px;
 
 p span {
   color: #45ac9d;
-}
-
-.search-form{
-  float:left;
-  width: auto;
 }

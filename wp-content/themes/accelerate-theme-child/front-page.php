@@ -63,7 +63,17 @@ get_header(); ?>
     <?php wp_reset_query(); ?>
    </div>
   </div>
-</section>
+
+
 <!-- .home-page -->
+<div class="twitter-feed">
+<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+<div id="secondary" class="widget-area" role="complementary">
+	<?php dynamic_sidebar( 'sidebar-2' ); ?>
+  </div>
+</div>
+</section>
+
+<?php endif; ?>
 
 <?php get_footer(); ?>

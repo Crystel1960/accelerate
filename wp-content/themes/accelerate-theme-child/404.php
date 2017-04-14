@@ -24,7 +24,7 @@ get_header(); ?>
 					We feel like complete jerks for totally misleading you.', 'accelerate' ); ?></p>
 					<p><?php _e( 'Feel free to take a look around our <a href="http://localhost:8888/accelerate/blog"><span>blog</span></a> or some of our featured
 					<a href="http://localhost:8888/accelerate/case-studies"><span>work</span></a>.', 'accelerate' ); ?></p>
-<div class="search-form">
+
 					<?php get_search_form(); ?>
 				</div>
 
