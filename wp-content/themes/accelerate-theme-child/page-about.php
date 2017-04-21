@@ -19,7 +19,7 @@ get_header(); ?>
 	<div class="about"><div id="content">
 		<?php while ( have_posts() ) : the_post(); ?>
 			<div class='homepage-hero'>
-				<h2><?php the_content(); ?></h2>
+				<h3><?php the_content(); ?></h3>
 			</div>
 		<?php endwhile; // end of the loop. ?>
 	</div><!-- .container -->
