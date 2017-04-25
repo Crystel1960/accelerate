@@ -58,18 +58,20 @@ get_header(); ?>
      <?php while ( have_posts() ) : the_post(); ?>
        <h2><?php the_title(); ?></h2>
        <?php the_excerpt(); ?>
-       <a class="read-more-link" href="<?php the_permalink(); ?>">Read More <span>&rsaquo;</span></a>
      <?php endwhile; ?>
     <?php wp_reset_query(); ?>
+		<a class="read-more-link" href="<?php the_permalink(); ?>">Read More <span>&rsaquo;</span></a>
    </div>
   </div>
 
 
 <!-- .home-page -->
 <div class="twitter-feed">
+	<h4>RECENT TWEETS</h4>
 <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
 <div id="secondary" class="widget-area" role="complementary">
-	<?php dynamic_sidebar( 'sidebar-2' ); ?>
+	<h4><a href="https://twitter.com/cabrera_studio">Follow Us ></h4></a>
+<?php dynamic_sidebar( 'sidebar-2' ); ?>
   </div>
 </div>
 </section>

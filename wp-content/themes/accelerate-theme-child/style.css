@@ -73,7 +73,9 @@ ul.homepage-featured-work {
 
 .blog-post {
   overflow: auto;
-  width:100;
+  float: left;
+  width:45%;
+  margin-right: 5%;
 }
 .blog-post h4 {
 	font-size: 16px;
@@ -96,11 +98,33 @@ ul.homepage-featured-work {
 
 /** Twitter sidebar**/
 
-.twitter-feed{
+.twitter-feed {
   float: left;
-  width: 30%;
-  margin: 5%;
+  width: 45%;
+  margin-left: 5%;
 }
+
+.twitter-feed h4{
+  font-size: 16px;
+    font-family: 'Montserrat';
+    color: #a6a6a6;
+    text-transform: uppercase;
+    margin-left: 5%;
+}
+.twitter-feed h4 a{
+  font-size: 16px;
+      font-family: 'Montserrat';
+      color: #45ac9d;
+      text-transform: uppercase;
+}
+
+nav.social-media-navigation .navigation {
+  display: inline-block;
+  float: left;
+  width:45%;
+  padding-left: 5%;
+}
+
 
 
 /*Case Studies*/
