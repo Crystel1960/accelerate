@@ -111,6 +111,13 @@ ul.homepage-featured-work {
     text-transform: uppercase;
     margin-left: 5%;
 }
+
+.widget-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: inherit;
+  font-family: 'Montserrat';
+}
 .twitter-feed h4 a{
   font-size: 16px;
       font-family: 'Montserrat';
@@ -118,13 +125,26 @@ ul.homepage-featured-work {
       text-transform: uppercase;
 }
 
-nav.social-media-navigation .navigation {
-  display: inline-block;
-  float: left;
-  width:45%;
-  padding-left: 5%;
+/** Social Media icons**/
+
+.menu-social-media-nav {
+   list-style-type: none;
+}
+.social-media-navigation .social-media-menu li {
+   display: inline-block;
+  margin-left: 1em;
+  height: 35px;
+  width: 35px;
+  background-color: black;
+  padding: 0px;
+  border-radius: 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
 }
 
+a, a:link{
+  color: white;
+}
 
 
 /*Case Studies*/

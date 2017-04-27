@@ -70,8 +70,8 @@ get_header(); ?>
 	<h4>RECENT TWEETS</h4>
 <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
 <div id="secondary" class="widget-area" role="complementary">
-	<h4><a href="https://twitter.com/cabrera_studio">Follow Us ></h4></a>
 <?php dynamic_sidebar( 'sidebar-2' ); ?>
+<h4><a href="https://twitter.com/cabrera_studio">Follow Us ></h4></a>
   </div>
 </div>
 </section>
