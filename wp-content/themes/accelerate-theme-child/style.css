@@ -126,25 +126,32 @@ ul.homepage-featured-work {
 }
 
 /** Social Media icons**/
-
-.menu-social-media-nav {
-   list-style-type: none;
-}
-.social-media-navigation .social-media-menu li {
-   display: inline-block;
-  margin-left: 1em;
-  height: 35px;
-  width: 35px;
-  background-color: black;
-  padding: 0px;
-  border-radius: 25px;
-  -moz-border-radius: 25px;
-  -webkit-border-radius: 25px;
+.social-media-navigation ul {
+    list-style: none;
 }
 
-a, a:link{
-  color: white;
+.social-media-menu li {
+    display: inline-block;
+
+    width: 40px;
+    margin: 0px 3px;
+    padding: 10px 0;
+
+    text-align: center;
+
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.8);
+
+    font-size: 0.6em;
 }
+
+.social-media-menu li a {
+    color: white;
+}
+
+/**footer styling for the teal accelerate**//
 
 
 /*Case Studies*/
